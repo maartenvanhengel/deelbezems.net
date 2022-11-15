@@ -30,6 +30,7 @@ namespace Htf2022.Deelbezems.Controllers
                 visuableMessage.positie = item.Positie;
                 visuableMessage.brandstofLevel = item.BrandstofLevel;
                 visuableMessage.kastId = item.KastId;
+                visuableMessage.dateTime = item.Timestamp;
 
                 messages.Add(visuableMessage);
             }

@@ -5,8 +5,9 @@
         public string bezemId { get; set; }
         public int statusType { get; set; }
         public Positie positie { get; set; }
-        public int brandstofLevel { get; set; }
+        public double brandstofLevel { get; set; }
         public string kastId { get; set;}
+        public DateTime dateTime { get; set; }
 
     }
 }

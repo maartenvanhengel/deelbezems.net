@@ -22,6 +22,7 @@ namespace Htf2022.Deelbezems.Models
                     item.Positie = message.Positie;
                     item.BrandstofLevel = message.BrandstofLevel;
                     item.Timestamp = message.Timestamp;
+                    item.KastId = message.KastId;
                     return true;
                 }
             }
