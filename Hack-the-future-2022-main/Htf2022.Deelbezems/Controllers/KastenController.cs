@@ -38,7 +38,8 @@ namespace Htf2022.Deelbezems.Controllers
                         item.maxCapaciteit--;               //plaatje minde
                     }
                 }
-                KastMessage kastMessage = new KastMessage() { capaciteit = item.maxCapaciteit, kastId = item.id };
+                KastMessage kastMessage = new KastMessage() 
+                { capaciteit = item.maxCapaciteit, kastId = item.id };
                 kastMessages.Add(kastMessage);
             }
 
