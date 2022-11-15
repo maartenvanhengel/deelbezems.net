@@ -1,4 +1,5 @@
 using Htf2022.Deelbezems.Infrastructure;
+using Htf2022.Deelbezems.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +11,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddHostedService<QueueReader>();
+
+builder.Services.AddTransient<IBezemEventHandler, BezemEventHandler>();
 
 var app = builder.Build();
 
